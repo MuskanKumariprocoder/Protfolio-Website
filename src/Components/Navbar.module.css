@@ -1,0 +1,62 @@
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:100%;
+    height:120px
+}
+
+.logo{
+    margin-left:35px;
+    font-size:25px;
+    color:#5E3BEE
+
+}
+.section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px;
+    list-style: none; 
+    font-size:17px;
+    cursor: pointer;
+}
+
+
+.button{
+    margin-right:40px;
+    padding:10px 12px;
+    border:1px solid #5E3BEE;
+    color:#5E3BEE;
+    background-color: white;
+
+}
+
+a{
+    text-decoration:none ;
+    color:black;
+    
+}
+nav ul li:first-child a {
+    color: #5E3BEE; /* Or your desired color */
+  }
+
+  @media screen  and (max-width:450px){
+    .section{
+        gap:17px;
+        margin-left: -10px;
+    }
+
+    .logo{
+        margin-left: 20px;
+    }
+
+   .button{
+        margin-left:18px;
+        padding:5px;
+        border : 1px solid transparent;
+    }
+      a:hover{
+        background-color: white;
+    }
+  }
