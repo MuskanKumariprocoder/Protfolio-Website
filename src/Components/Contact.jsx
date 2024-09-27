@@ -18,10 +18,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.send(
-      'your_service_id',    // Replace with your actual Service ID from EmailJS
-      'your_template_id',   // Replace with your actual Template ID from EmailJS
+      'service_2k2tjxr',    // Replace with your actual Service ID from EmailJS
+      'template_kp9mm7p',   // Replace with your actual Template ID from EmailJS
       formData,
-      'your_user_id'        // Replace with your actual User ID (Public Key) from EmailJS
+      'dfUGhurV06t2mBZEO'        // Replace with your actual User ID (Public Key) from EmailJS
     ).then((response) => {
       alert('Email sent successfully!');
     }).catch((err) => {
