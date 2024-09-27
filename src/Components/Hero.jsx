@@ -17,7 +17,7 @@ const Hero = () => {
     <>
     <div className={styles.hero_container} id = "home">
         <div>
-        <h5>Hey, I am Harjot</h5>
+        <h5>Hey, I am Muskan</h5>
         <h1>I am a <strong className={styles.text_color}>Web Developer</strong></h1>
         <p>Passionate web developer with expertise in creating dynamic,<br/>
          user-friendly websites and applications.</p>

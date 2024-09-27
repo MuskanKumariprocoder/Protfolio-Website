@@ -18,15 +18,13 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.send(
-      'service_Muskan',      // Replace with your Service ID
-      'template_mk7260932090@gmail.com',     // Replace with your Template ID
+      'your_service_id',    // Replace with your actual Service ID from EmailJS
+      'your_template_id',   // Replace with your actual Template ID from EmailJS
       formData,
-      'jmDO874QqUs7IXtqu'     // Replace with your User ID (Public Key)
+      'your_user_id'        // Replace with your actual User ID (Public Key) from EmailJS
     ).then((response) => {
-      //console.log('success', response.status, response.text);
       alert('Email sent successfully!');
     }).catch((err) => {
-      //console.log('failed', err);
       alert('Failed to send email. Please try again.');
     });
 
@@ -38,8 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <>
-    <div id = "contact_form">
+    <div id="contact_form">
       <h1 className={styles.contact_heading}>Contact Me</h1>
       <div>
         <form className={styles.contact_form} onSubmit={handleSubmit}>
@@ -67,11 +64,10 @@ const Contact = () => {
             rows="8"
             onChange={handleChange}
           />
-          <button className={styles.contact_button } type="submit">Submit</button>
+          <button className={styles.contact_button} type="submit">Submit</button>
         </form>
       </div>
-      </div>
-    </>
+    </div>
   );
 };
 
